@@ -1,6 +1,6 @@
 import Header from "./Header.tsx";
 import CardList from "./CardList.tsx";
-import { products } from "./rawData.tsx";
+import { products } from "./productData.tsx";
 
 function App() {
   return (

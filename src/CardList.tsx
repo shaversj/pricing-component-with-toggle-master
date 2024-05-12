@@ -1,4 +1,4 @@
-import { Product } from "./rawData.tsx";
+import { Product } from "./productData.tsx";
 import Card from "./Card.tsx";
 export default function CardList({ products }: { products: Product[] }) {
   return (
