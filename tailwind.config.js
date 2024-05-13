@@ -13,7 +13,7 @@ export default {
       colors: {
         primary: {
           "background-color": "hsl(240, 70%, 98%)",
-          "gradient-primary": "linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%))",
+          "background-linear-gradient": "bg-gradient-to-r from-[#A3A8F0] to-[#696FDD]",
         },
         neutral: {
           "background-color": "hsl(240, 70%, 98%)",
