@@ -1,6 +1,11 @@
 import { Product } from "./productData.tsx";
 
-export default function Card({ product }: { product: Product }) {
+interface CardProps {
+  product: Product;
+  showMonthly: boolean;
+}
+
+export default function Card({ product, showMonthly }: CardProps) {
   return (
     <>
       <div data-position={product.position} className={"rounded-md bg-white from-[#A3A8F0] to-[#696FDD] py-[31px] font-Montserrat data-[position=middle]:bg-gradient-to-r"}>
@@ -9,7 +14,7 @@ export default function Card({ product }: { product: Product }) {
         </h3>
         <div data-position={product.position} className={"flex items-center justify-center gap-x-[7.46px] font-bold text-neutral-dark-grayish-blue data-[position=middle]:text-white"}>
           <span className={"text-[40px]"}>$</span>
-          <span className={"text-[72px]"}>{product.price}</span>
+          <span className={"text-[72px]"}>{showMonthly ? product.price : parseFloat((product.price * 10 + 0.09).toFixed(2))}</span>
         </div>
 
         <div className={"mx-[29px]"}>
@@ -19,8 +24,10 @@ export default function Card({ product }: { product: Product }) {
               "divide-neutral-grayish-line-color border-neutral-grayish-line-color flex flex-col divide-y-[1px] border-b-[1px] border-t-[1px] text-[15px] leading-[38px] data-[position=middle]:text-white"
             }
           >
-            {product.features.map((feature) => (
-              <span className={"text-center"}>{feature}</span>
+            {product.features.map((feature, index) => (
+              <span key={index} className={"text-center"}>
+                {feature}
+              </span>
             ))}
           </div>
           <button

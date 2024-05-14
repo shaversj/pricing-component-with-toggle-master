@@ -7,6 +7,10 @@ export default {
       lg: "1440px",
     },
     extend: {
+      backgroundImage: {
+        "top-background-pattern": "/src/assets/images/bg-top.svg",
+        "position-50": "50% 0",
+      },
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
       },
