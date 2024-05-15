@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <div className={"bg-primary-background-color max-w-[375px] bg-[10%_0%] bg-no-repeat px-6 [background-image:url('/src/assets/images/bg-top.svg')]"}>
+      <div className={"bg-primary-background-color mx-auto min-w-[375px] bg-[10%_0%] bg-no-repeat px-6 [background-image:url('/src/assets/images/bg-top.svg')] lg:min-h-screen lg:w-[1440px]"}>
         <div>
           <Header showMonthlyHandler={showMonthlyHandler} showMonthly={showMonthly} />
           <CardList products={products} showMonthly={showMonthly} />
