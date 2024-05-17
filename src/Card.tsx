@@ -8,7 +8,12 @@ interface CardProps {
 export default function Card({ product, showMonthly }: CardProps) {
   return (
     <>
-      <div data-position={product.position} className={"w-[327px] rounded-md bg-white from-[#A3A8F0] to-[#696FDD] py-[31px] font-Montserrat data-[position=middle]:bg-gradient-to-r lg:w-[350px]"}>
+      <div
+        data-position={product.position}
+        className={
+          "w-[327px] rounded-xl  bg-white from-[#A3A8F0] to-[#696FDD] py-[31px] font-Montserrat drop-shadow-sm data-[position=middle]:bg-gradient-to-r lg:w-[350px] lg:data-[position=first]:rounded-r-none lg:data-[position=last]:rounded-l-none lg:data-[position=middle]:py-[55px]"
+        }
+      >
         <h3 data-position={product.position} className={"text-center text-[18px] font-bold leading-[28px] text-neutral-grayish-blue data-[position=middle]:text-white"}>
           {product.name}
         </h3>
@@ -21,7 +26,7 @@ export default function Card({ product, showMonthly }: CardProps) {
           <div
             data-position={product.position}
             className={
-              "divide-neutral-grayish-line-color border-neutral-grayish-line-color flex flex-col divide-y-[1px] border-b-[1px] border-t-[1px] text-[15px] font-semibold leading-[38px] text-neutral-grayish-blue data-[position=middle]:text-white"
+              "flex flex-col divide-y-[1px] divide-neutral-grayish-line-color border-b-[1px] border-t-[1px] border-neutral-grayish-line-color text-[15px] font-semibold leading-[38px] text-neutral-grayish-blue data-[position=middle]:text-white"
             }
           >
             {product.features.map((feature, index) => (
