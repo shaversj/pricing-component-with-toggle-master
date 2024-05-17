@@ -8,7 +8,7 @@ interface CardListProps {
 
 export default function CardList({ products, showMonthly }: CardListProps) {
   return (
-    <div className={"grid grid-cols-1 gap-y-8 lg:flex lg:justify-center"}>
+    <div className={"flex flex-col items-center gap-y-8 lg:flex lg:flex-row lg:justify-center"}>
       {products.map((product) => (
         <Card key={product.id} product={product} showMonthly={showMonthly} />
       ))}
