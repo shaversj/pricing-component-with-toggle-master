@@ -3,26 +3,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@media (0px < width < 1439px) {
-    #main {
-        background: url('/src/assets/images/bg-top.svg') 40% 0% no-repeat;
-
-    }
-}
-
-@media (min-width: 1440px) {
-    #main {
-        background: url('/src/assets/images/bg-top.svg') top right no-repeat, url('/src/assets/images/bg-bottom.svg') bottom left no-repeat;
-
-    }
-}
-
-
-
-
-/*#main {*/
-/*    background-image: url('/src/assets/images/bg-bottom.svg');*/
-/*    background-repeat: no-repeat;*/
-/*    background-position: bottom left;*/
-/*}*/
