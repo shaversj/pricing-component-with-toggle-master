@@ -17,10 +17,10 @@ function App() {
           "mx-auto w-[375px] bg-primary-background-color bg-[url('/src/assets/images/bg-top.svg')] bg-[length:472px_650px] bg-[left_150px_top_-50px] bg-no-repeat px-6 lg:min-h-[850px] lg:w-[1440px] lg:bg-[url('/src/assets/images/bg-top.svg'),url('/src/assets/images/bg-bottom.svg')] lg:bg-auto lg:bg-[position:top_right,bottom_left]"
         }
       >
-        <div className={"antialiased"}>
+        <main className={"antialiased"}>
           <Header showMonthlyHandler={showMonthlyHandler} showMonthly={showMonthly} />
           <CardList products={products} showMonthly={showMonthly} />
-        </div>
+        </main>
       </div>
     </>
   );

@@ -43,6 +43,7 @@ export default function Card({ product, showMonthly }: CardProps) {
           </div>
           <button
             data-position={product.id.toString()}
+            aria-label={"Learn More"}
             className={
               "mt-8 w-full rounded-md from-[#A3A8F0] to-[#696FDD] py-[10px] text-[13px] font-bold uppercase tracking-[1.39px] text-white data-[position='2']:bg-white data-[position='1']:bg-gradient-to-r data-[position='3']:bg-gradient-to-r data-[position='2']:text-[#6D72DE]"
             }
